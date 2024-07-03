@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .url{
+            height: 1000px;
+            width: 400px;
+        }
+        fieldset{
+            width: 500px;
+            height: 700px;
+            background-image: url(https://img.pikbest.com/backgrounds/v3/20190919/complex-information-that-is-in-digital-form-background_1557123.jpg!w700wp);
+            background-repeat: no-repeat;
+            color: rgb(238, 144, 12);
+            
+        }
+        pre{
+            font-family:'Times New Roman', Times, serif ;  
+        }
+        [type="text"]{
+            background-color: rgb(238, 255, 0);
+        }
+        [type~="check"]{
+            background-color: aquamarine;
+        }
+        [type|="e"]{
+            background-color: rgb(226, 43, 195);
+        }
+        [type$=local]{
+            background-color: chocolate;
+        }
+        /* [textarea=]{
+            background-color: rgb(32, 255, 20);
+        } */
+        [type*=n]{
+            background-color: rgb(0, 174, 255);
+        }
+        [type^=Submit]{
+            background-color: rgb(251, 39, 2);
+
+        }
+        [value|=Reset]{
+            background-color: rgb(39, 250, 11);
+        }
+        /* [type=radio]{
+            background-color: rgb(15, 205, 252);
+        } */
+         h2{
+            position: relative;
+            left: 100px;
+            color: rgb(43, 255, 0);
+         }
+    </style>
+</head>
+<body>
+         
+<fieldset>
+    <form action="">
+        <h2>      Student Registration Form</h2>
+        <pre>
+     <label for="">FIRST NAME</label>               :   <input type="text" > <br> 
+     <label for="">SECOND NAME</label>          :   <input type="text"> <br> 
+     <label for="">DATE OF BIRTH</label>          :   <input type="datetime-local"> <br>
+    <label for=""> EMAIL ID</label>                      :   <input type="e-mail"> <br>
+     <label for="">MOBILE NUMBER</label>      :   <input type="number-text"> <BR>
+     <label for="">GENDER</label>                       :   <input type="radio">Male  <input type="radio">Female <BR>
+    <label for=""> ADDRESS</label>                      :   <textarea rows="4" ></textarea> <br>
+     <label for="">CITY</label>                               :   <input type="text"> </BR>
+    <label for=""> PIN CODE</label>                      :   <input type="number"> </BR>
+    <label for=""> STATE</label>                             :   <input type="text"> <br>
+    <label for=""> COUNTRY</label>                      :   <input type="text" > <br>
+     <label for="">HOBBIES</label>                        :   <input type="checkbox">Drawing  <input type="checkbox">Singing <input type="checkbox">Dancing
+                                                  <input type="checkbox">Others <input type="text"> <br>
+    <label for=""> COURSES APPLIED    </label>  :    BCA<input type="radio">  B.Com<input type="radio">  B.Sc<input type="radio">  B.A<input type="radio"> <br><br>
+             <input type="submit" value="Reset">                       <input type="submit">
+
+            </pre>
+
+
+    </form>
+</fieldset>
+</body>
+</html>
